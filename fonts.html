@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1000 Fonts</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237C3AED'/%3E%3Cstop offset='1' stop-color='%2306B6D4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='bold' font-size='18' fill='%23fff' text-anchor='middle'%3EAa%3C/text%3E%3C/svg%3E" />
+  <meta name="description" content="1,000+ free web & desktop fonts curated by typography enthusiasts. 100% free for personal and commercial projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;800&family=Roboto+Mono:wght@500;700&family=Caveat:wght@600&family=Bebas+Neue&family=Merriweather:wght@400;700&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@500;800&family=Pacifico&family=Oswald:wght@500;700&family=Lora:wght@500;700&family=Archivo:wght@600;800&family=Fraunces:wght@600;700;900&family=Libre+Baskerville:wght@700&family=Josefin+Sans:wght@600;700&family=Cormorant+Garamond:wght@700&family=Poppins:wght@500;700&family=Dancing+Script:wght@700&family=Anton&family=Fira+Code:wght@500;700&family=DM+Serif+Display&family=Raleway:wght@600;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --bg:#0F172A;
+      --bg-soft:#141D33;
+      --surface:#1A2438;
+      --surface-soft:#223048;
+      --border:rgba(148,163,184,.14);
+      --border-strong:rgba(148,163,184,.26);
+      --text:#E6EBF3;
+      --text-muted:#94A3B8;
+      --accent:#7C3AED;
+      --neon:#06B6D4;
+      --accent-soft:rgba(124,58,237,.18);
+      --neon-soft:rgba(6,182,212,.14);
+      --shadow:0 24px 60px -18px rgba(2,6,23,.8);
+    }
+    html[data-theme="light"]{
+      --bg:#F8FAFC;
+      --bg-soft:#EEF2F7;
+      --surface:#FFFFFF;
+      --surface-soft:#F1F4F9;
+      --border:rgba(15,23,42,.10);
+      --border-strong:rgba(15,23,42,.18);
+      --text:#0F172A;
+      --text-muted:#58677E;
+      --accent:#7C3AED;
+      --neon:#0891B2;
+      --accent-soft:rgba(124,58,237,.10);
+      --neon-soft:rgba(6,182,212,.12);
+      --shadow:0 24px 60px -22px rgba(15,23,42,.22);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"Inter",system-ui,-apple-system,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.5;
+      transition:background .3s ease,color .3s ease;
+      -webkit-font-smoothing:antialiased;
+    }
+    button{font-family:inherit}
+    ::selection{background:var(--accent-soft)}
+    ::-webkit-scrollbar{width:10px;height:10px}
+    ::-webkit-scrollbar-track{background:transparent}
+    ::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:99px}
+    ::-webkit-scrollbar-thumb:hover{background:var(--text-muted)}
+
+    .page-max{max-width:1240px;margin-inline:auto;padding-inline:clamp(1rem,4vw,2.5rem)}
+    .section-pad{padding-block:clamp(3.5rem,8vw,6rem)}
+
+    /* ============ Header ============ */
+    .topbar{position:sticky;top:0;z-index:60;backdrop-filter:blur(16px)}
+    .topbar::after{content:"";position:absolute;inset:0;background:color-mix(in srgb,var(--bg) 85%,transparent);z-index:-1}
+    .topbar-inner{display:flex;align-items:center;gap:1.25rem;border-bottom:1px solid var(--border);padding-block:.68rem}
+    .brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--text);font-weight:700;letter-spacing:-.02em;white-space:nowrap}
+    .logo-mrk{width:34px;height:34px;border-radius:.7rem;flex-shrink:0;
+      background:linear-gradient(135deg,var(--accent),var(--neon));
+      display:grid;place-items:center;color:#fff;font-family:"Anton",sans-serif;font-size:1.15rem;box-shadow:0 0 0 3px var(--accent-soft)}
+    .brand-name{font-size:1.06rem}
+    .brand-name span{background:linear-gradient(120deg,var(--accent),var(--neon));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:800}
+    .navlinks{display:flex;align-items:center;gap:.15rem;margin-inline:auto}
+    .navlinks a{color:var(--text-muted);text-decoration:none;font-size:.92rem;font-weight:500;padding:.45rem .8rem;border-radius:.55rem;transition:.2s;white-space:nowrap}
+    .navlinks a:hover{color:var(--text);background:var(--surface-soft)}
+    .hdr-rght{display:flex;align-items:center;gap:.7rem;margin-inline-start:auto}
+
+    .search{position:relative;display:flex;align-items:center}
+    .search input[type="text"]{
+      background:var(--surface);border:1px solid var(--border);color:var(--text);
+      border-radius:.7rem;padding:.5rem .9rem .5rem 2.4rem;width:clamp(9.5rem,20vw,16rem);
+      font-size:.9rem;outline:none;transition:.2s}
+    .search input::placeholder{color:var(--text-muted)}
+    .search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+    .search svg{position:absolute;left:.8rem;pointer-events:none;color:var(--text-muted)}
+    .kb-badge{position:absolute;right:.5rem;font-size:.65rem;font-weight:600;color:var(--text-muted);
+      border:1px solid var(--border);padding:.14rem .4rem;border-radius:.4rem;background:var(--surface-soft)}
+
+    .toggle{position:relative;width:40px;height:40px;border-radius:.6rem;border:1px solid var(--border);
+      background:var(--surface);cursor:pointer;transition:.25s;flex-shrink:0;padding:0}
+    .toggle:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+
+    .burger{display:none;background:var(--surface);border:1px solid var(--border);color:var(--text);
+      width:40px;height:40px;border-radius:.6rem;cursor:pointer;place-items:center}
+    .mobile-nav{display:none;flex-direction:column;gap:.25rem;padding:.6rem 1rem 1rem;
+      border-bottom:1px solid var(--border);background:color-mix(in srgb,var(--bg) 96%,transparent)}
+    .mobile-nav a{color:var(--text);text-decoration:none;padding:.7rem .6rem;border-radius:.55rem;font-size:.95rem;font-weight:500}
+    .mobile-nav a:hover{background:var(--surface-soft)}
+    .mmobile-search{display:none}
+    @media (max-width:860px){
+      .navlinks,.search{display:none}
+      .burger{display:grid}
+      .mobile-nav{display:flex}
+      .mmobile-search{display:block;margin-inline-start:auto}
+    }
+
+    /* ============ Buttons ============ */
+    .btn{display:inline-flex;align-items:center;gap:.45rem;border-radius:.7rem;font-weight:600;
+      font-size:.92rem;padding:.62rem 1.1rem;cursor:pointer;transition:.2s;border:1px solid transparent;
+      text-decoration:none;white-space:nowrap;color:var(--text)}
+    .btn-primary{background:linear-gradient(135deg,var(--accent),var(--neon));color:#fff;box-shadow:0 10px 24px -10px var(--accent-soft)}
+    .btn-primary:hover{transform:translateY(-1px);filter:brightness(1.08);box-shadow:0 14px 30px -10px var(--accent-soft)}
+    .btn-secondary{background:var(--surface);color:var(--text);border-color:var(--border)}
+    .btn-secondary:hover{border-color:var(--accent);background:var(--surface-soft)}
+    .btn-ghost{background:transparent;color:var(--text-muted);border-color:var(--border)}
+    .btn-ghost:hover{color:var(--text);border-color:var(--border-strong)}
+    .btn-sm{padding:.42rem .7rem;font-size:.8rem;border-radius:.55rem}
+
+    /* ============ Hero ============ */
+    .hero{position:relative;overflow:hidden;padding-block:clamp(3.2rem,7vw,5.2rem)}
+    .hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+      background:radial-gradient(600px 300px at 12% 5%,var(--accent-soft),transparent 60%),
+       radial-gradient(700px 340px at 90% 15%,var(--neon-soft),transparent 60%)}
+    .hero-inner{position:relative}
+    .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:600;color:var(--neon);
+      border:1px solid var(--neon-soft);background:var(--neon-soft);padding:.32rem .75rem;border-radius:99px;letter-spacing:.02em}
+    .eyebrow .dot{width:7px;height:7px;border-radius:99px;background:var(--neon);box-shadow:0 0 10px var(--neon)}
+    .h-hero{font-size:clamp(2.2rem,5.4vw,3.6rem);line-height:1.08;font-weight:800;letter-spacing:-.03em;margin:.9rem 0 .6rem;max-width:17ch}
+    .h-hero .grad{background:linear-gradient(120deg,var(--accent),var(--neon));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .h-sub{color:var(--text-muted);font-size:clamp(1rem,2vw,1.12rem);max-width:52ch;margin:0 0 1.6rem}
+    .h-ctas{display:flex;flex-wrap:wrap;gap:.7rem}
+
+    .live-preview{margin-top:clamp(1.8rem,4vw,2.6rem)}
+    .live-preview-labl{font-size:.75rem;font-weight:600;color:var(--text-muted);margin-bottom:.45rem;display:flex;align-items:center;gap:.4rem}
+    .lp-field{display:flex;align-items:center;gap:.6rem;background:var(--surface);border:1px solid var(--border);
+      border-radius:.9rem;padding:.55rem .8rem;transition:.2s}
+    .lp-field:focus-within{border-color:var(--neon);box-shadow:0 0 0 3px var(--neon-soft)}
+    .lp-field label{font-size:.78rem;color:var(--neon);font-weight:700;white-space:nowrap;letter-spacing:.02em}
+    .lp-input{flex:1;background:transparent;border:none;color:var(--text);font-size:.95rem;outline:none;min-width:0}
+    .lp-input::placeholder{color:var(--text-muted)}
+    .letters-chip{display:flex;gap:.15rem}
+    .letters-chip span{width:21px;height:21px;display:grid;place-items:center;font-size:.66rem;font-weight:700;
+      color:var(--text-muted);border:1px solid var(--border);border-radius:.35rem;background:var(--surface-soft)}
+    .letters-chip span.on{color:#fff;background:linear-gradient(135deg,var(--accent),var(--neon));border-color:transparent}
+
+    /* ============ Toolbar ============ */
+    .toolbar{position:sticky;top:55px;z-index:50;padding-block:.8rem;border-bottom:1px solid var(--border);
+      background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px)}
+    .toolbar-inner{display:flex;flex-wrap:wrap;align-items:center;gap:.7rem;justify-content:space-between}
+    .tags{display:flex;gap:.45rem;flex-wrap:wrap;align-items:center}
+    .tag{background:transparent;border:1px solid var(--border);color:var(--text-muted);font-size:.82rem;font-weight:600;
+      padding:.4rem .8rem;border-radius:99px;cursor:pointer;transition:.2s;white-space:nowrap}
+    .tag:hover{color:var(--text);border-color:var(--border-strong)}
+    .tag.active{background:linear-gradient(135deg,var(--accent),var(--neon));color:#fff;border-color:transparent}
+    .tool-controls{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+    .sort-select{background:var(--surface);border:1px solid var(--border);color:var(--text);border-radius:.6rem;
+      padding:.42rem .7rem;font-size:.82rem;cursor:pointer;outline:none}
+    .sizectrl{display:flex;align-items:center;gap:.6rem;font-size:.78rem;color:var(--text-muted);white-space:nowrap}
+    .sizectrl input[type="range"]{accent-color:var(--accent);width:7rem;cursor:pointer}
+    .size-val{min-width:2.4rem;text-align:right;font-weight:700;color:var(--text)}
+    @media (max-width:760px){.toolbar-inner{flex-direction:column;align-items:stretch}.tool-controls{justify-content:space-between}}
+
+    /* ============ Font grid ============ */
+    .grid-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:1.1rem;gap:.6rem}
+    .grid-head h2{font-size:1.15rem;font-weight:700;letter-spacing:-.01em;margin:0}
+    .grid-head p{color:var(--text-muted);font-size:.85rem;margin:0}
+    .font-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.75rem,2vw,1.4rem)}
+    @media (max-width:980px){.font-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:620px){.font-grid{grid-template-columns:1fr}}
+
+    .font-card{background:var(--surface);border:1px solid var(--border);border-radius:1rem;overflow:hidden;
+      transition:transform .25s,border-color .25s,box-shadow .25s;display:flex;flex-direction:column}
+    .font-card:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:var(--shadow)}
+    .fc-top{display:flex;justify-content:space-between;align-items:center;padding:.9rem 1rem .3rem}
+    .favorite{background:transparent;border:none;color:var(--text-muted);cursor:pointer;font-size:1.15rem;transition:.2s;line-height:1;padding:.15rem}
+    .favorite:hover{color:var(--accent);transform:scale(1.2)}
+    .favorite.on{color:var(--accent)}
+    .font-varcount{border-radius:99px;padding:.28rem .55rem;background:var(--accent-soft);color:var(--accent);font-size:.68rem;font-weight:700;white-space:nowrap}
+    .fc-preview{display:flex;align-items:center;justify-content:center;min-height:9.5rem;padding:1rem;text-align:center}
+    .fc-preview span{word-wrap:break-word;max-width:100%;line-height:1.12;overflow-wrap:anywhere}
+    .fc-info{padding:.9rem 1rem 1rem;border-top:1px solid var(--border)}
+    .fc-name{font-weight:700;margin:0;font-size:1.02rem}
+    .fc-meta{display:flex;align-items:center;gap:.5rem;color:var(--text-muted);font-size:.8rem;margin:.2rem 0 .85rem;flex-wrap:wrap}
+    .license{border-radius:99px;background:var(--neon-soft);color:var(--neon);padding:.15rem .5rem;font-size:.66rem;font-weight:700;white-space:nowrap}
+    .fc-actions{display:flex;gap:.45rem}
+    .fc-actions .btn{flex:1;justify-content:center;padding:.5rem .6rem;font-size:.78rem}
+    .icon-btn{border-radius:.6rem;padding:.48rem;display:grid;place-items:center;line-height:0}
+    .empty{text-align:center;color:var(--text-muted);padding:3rem 0;grid-column:1/-1}
+    .loadmore{display:flex;justify-content:center;margin-top:2rem}
+
+    /* ============ Community ============ */
+    .comm{position:relative;overflow:hidden;border-radius:1.6rem;padding:clamp(2rem,6vw,3.5rem);
+      border:1px solid var(--border);background:var(--surface)}
+    .comm::before{content:"";position:absolute;inset:0;pointer-events:none;
+      background:radial-gradient(520px 240px at 12% 0,var(--accent-soft),transparent 60%),
+       radial-gradient(520px 260px at 92% 100%,var(--neon-soft),transparent 60%)}
+    .comm-inner{position:relative;max-width:34ch}
+    .comm h2{font-size:clamp(1.5rem,3.4vw,2.2rem);letter-spacing:-.02em;margin:0 0 .4rem}
+    .comm p{color:var(--text-muted);margin:0 0 1rem}
+    .stat{display:flex;flex-wrap:wrap;gap:clamp(1rem,3vw,2.5rem);margin:1.5rem 0}
+    .stat b{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;letter-spacing:-.02em;
+      background:linear-gradient(120deg,var(--accent),var(--neon));-webkit-background-clip:text;background-clip:text;color:transparent;display:block}
+    .stat span{color:var(--text-muted);font-size:.85rem}
+    .comm-ctas{display:flex;flex-wrap:wrap;gap:.6rem}
+    .chip-btn{display:inline-flex;align-items:center;gap:.45rem;border:1px solid var(--border);background:var(--surface-soft);
+      color:var(--text);border-radius:.7rem;padding:.5rem .9rem;font-size:.85rem;font-weight:600;text-decoration:none;transition:.2s}
+    .chip-btn:hover{border-color:var(--accent);transform:translateY(-1px)}
+
+    .join-section{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(1rem,3vw,1.6rem);margin-top:clamp(2rem,5vw,3rem);align-items:start}
+    @media (max-width:760px){.join-section{grid-template-columns:1fr}}
+    .submissions{background:var(--surface);border:1px solid var(--border);border-radius:1rem;padding:1.1rem}
+    .submissions h3{font-size:.9rem;font-weight:700;margin:0 0 .8rem}
+    .sub-list{display:flex;flex-direction:column;gap:.5rem}
+    .sub{display:flex;align-items:center;gap:.7rem;padding:.5rem .55rem;border-radius:.7rem;transition:.2s}
+    .sub:hover{background:var(--surface-soft)}
+    .sub-ava{width:34px;height:34px;border-radius:99px;flex-shrink:0;display:grid;place-items:center;color:#fff;font-weight:700;font-size:.85rem;
+      background:linear-gradient(135deg,var(--accent),var(--neon))}
+    .sub-body{flex:1;min-width:0}
+    .sub-body b{font-size:.85rem;display:block}
+    .sub-body p{font-size:.78rem;color:var(--text-muted);margin:.05rem 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .sub-font{font-size:.72rem;color:var(--neon);font-weight:600;white-space:nowrap;flex-shrink:0}
+
+    /* ============ Footer ========= */
+    .footer{background:var(--bg-soft);border-top:1px solid var(--border);padding-top:3rem}
+    .fot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.3fr;gap:clamp(1.2rem,3vw,2rem);padding-bottom:2rem}
+    @media (max-width:820px){.fot-grid{grid-template-columns:1fr 1fr}}
+    @media (max-width:520px){.fot-grid{grid-template-columns:1fr}}
+    .f-ot h4{font-size:.82rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--text);margin:0 0 .8rem}
+    .f-ot a{display:block;color:var(--text-muted);text-decoration:none;font-size:.88rem;padding:.22rem 0;transition:.2s}
+    .f-ot a:hover{color:var(--neon)}
+
+    .f-brand-note{color:var(--text-muted);font-size:.88rem;margin:.8rem 0 0;max-width:30ch;line-height:1.6}
+    .f-social{display:flex;gap:.5rem;margin-top:1rem}
+    .f-social a{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:.6rem;
+      border:1px solid var(--border);color:var(--text-muted);transition:.2s}
+    .f-social a:hover{color:var(--neon);border-color:var(--neon-soft);transform:translateY(-1px)}
+    .newsletter{display:flex;gap:.5rem;margin-top:.6rem}
+    .newsletter input{flex:1;background:var(--surface);border:1px solid var(--border);border-radius:.6rem;
+      padding:.55rem .7rem;color:var(--text);outline:none;font-size:.85rem;min-width:0}
+    .newsletter input:focus{border-color:var(--neon)}
+    .floor{border-top:1px solid var(--border);padding:1.2rem 0;display:flex;justify-content:space-between;
+      flex-wrap:wrap;gap:.6rem;color:var(--text-muted);font-size:.82rem;margin-top:1rem}
+    .floor a{color:var(--text-muted);text-decoration:none}
+    .floor a:hover{color:var(--neon)}
+
+    /* mobile nav: default hidden, show when .open via JS */
+    .mobile-nav{display:none;flex-direction:column;gap:.25rem;padding:.6rem 1rem 1rem;
+      border-bottom:1px solid var(--border);background:color-mix(in srgb,var(--bg) 96%,transparent)}
+    .mobile-nav.open{display:flex}
+    .mobile-nav a{color:var(--text);text-decoration:none;padding:.7rem .6rem;border-radius:.55rem;font-size:.95rem;font-weight:500}
+    .mobile-nav a:hover{background:var(--surface-soft)}
+    .mmobile-search{display:none}
+    @media (max-width:860px){.mmobile-search{display:block}}
+
+    /* Toast */
+    .toast{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);z-index:80;
+      background:var(--text);color:var(--bg);padding:.6rem 1rem;border-radius:.75rem;font-size:.85rem;font-weight:600;
+      box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.3s;white-space:nowrap}
+    .toast.show{opacity:1;transform:translate(-50%,-4px)}
+
+    .fadein{animation:fadeIn .5s ease}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+    @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@18.3.1",
+        "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+        "react/jsx-runtime": "https://esm.sh/react@18.3.1/jsx-runtime",
+        "react/jsx-dev-runtime": "https://esm.sh/react-dom@18.3.1/jsx-dev-runtime"
+      }
+    }
+  </script>
+
+  <script type="module">
+    import React, { useState, useEffect, useMemo, useRef, useCallback } from "react";
+    import { createRoot } from "react-dom/client";
+
+    const h = React.createElement;
+
+    const FONTS = [
+      { name: "Inter", family: "'Inter',sans-serif", author: "Rasmus Andersson", cat: "Sans-Serif", lic: "OFL Free", variants: 36, dl: 4200 },
+      { name: "Playfair Display", family: "'Playfair Display',serif", author: "Claus Eggers Sorensen", cat: "Serif", lic: "OFL Free", variants: 18, dl: 3100 },
+      { name: "Roboto Mono", family: "'Roboto Mono',monospace", author: "Google Fonts", cat: "Monospace", lic: "Apache 2.0", variants: 6, dl: 2500 },
+      { name: "Space Grotesk", family: "'Space Grotesk',sans-serif", author: "Florian Karsten", cat: "Variable", lic: "OFL Free", variants: 14, dl: 4100 },
+      { name: "Bebas Neue", family: "'Bebas Neue',sans-serif", author: "Dharma Type", cat: "Display", lic: "OFL Free", variants: 1, dl: 3350 },
+      { name: "Caveat", family: "'Caveat',cursive", author: "Impallari Type", cat: "Handwriting", lic: "OFL Free", variants: 4, dl: 1980 },
+      { name: "Poppins", family: "'Poppins',sans-serif", author: "Jonny Pinhorn", cat: "Sans-Serif", lic: "OFL Free", variants: 18, dl: 4400 },
+      { name: "JetBrains Mono", family: "'JetBrains Mono',monospace", author: "JetBrains", cat: "Monospace", lic: "OFL Free", variants: 8, dl: 3800 },
+      { name: "Oswald", family: "'Oswald',sans-serif", author: "Vernon Adams", cat: "Display", lic: "OFL Free", variants: 6, dl: 2900 },
+      { name: "Merriweather", family: "'Merriweather',serif", author: "Sorkin Type", cat: "Serif", lic: "OFL Free", variants: 8, dl: 2200 },
+      { name: "Archivo", family: "'Archivo',sans-serif", author: "Omnibus-Type", cat: "Sans-Serif", lic: "OFL Free", variants: 18, dl: 2100 },
+      { name: "Lora", family: "'Lora',serif", author: "Cyreal", cat: "Serif", lic: "OFL Free", variants: 9, dl: 1600 },
+      { name: "Fraunces", family: "'Fraunces',serif", author: "Undercase Type", cat: "Variable", lic: "OFL Free", variants: 4, dl: 1450 },
+      { name: "DM Serif Display", family: "'DM Serif Display',serif", author: "Colophon Foundry", cat: "Display", lic: "OFL Free", variants: 2, dl: 1350 },
+      { name: "Josefin Sans", family: "'Josefin Sans',sans-serif", author: "Santiago Orozco", cat: "Sans-Serif", lic: "OFL Free", variants: 12, dl: 1300 },
+      { name: "Cormorant Garamond", family: "'Cormorant Garamond',serif", author: "Christian Thalmann", cat: "Serif", lic: "OFL Free", variants: 8, dl: 1150 },
+      { name: "Raleway", family: "'Raleway',sans-serif", author: "Matt McInerney", cat: "Sans-Serif", lic: "OFL Free", variants: 18, dl: 2800 },
+      { name: "Pacifico", family: "'Pacifico',cursive", author: "Vernon Adams", cat: "Handwriting", lic: "OFL Free", variants: 1, dl: 1200 },
+      { name: "Fira Code", family: "'Fira Code',monospace", author: "Nikita Prokopov", cat: "Monospace", lic: "OFL Free", variants: 4, dl: 3000 },
+      { name: "Anton", family: "'Anton',sans-serif", author: "Vernon Adams", cat: "Display", lic: "OFL Free", variants: 1, dl: 2600 },
+      { name: "Dancing Script", family: "'Dancing Script',cursive", author: "Impallari Type", cat: "Handwriting", lic: "OFL Free", variants: 7, dl: 950 },
+    ];
+    const CATEGORIES = ["All", "Serif", "Sans-Serif", "Display", "Monospace", "Handwriting", "Variable"];
+    const SORTS = ["Trending", "Most Downloaded", "Recently Added", "Alphabetical"];
+
+    const base = (w, hb, extra) => Object.assign({ width: w, height: hb, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor" }, extra);
+    const I = {
+      search: h("svg", base(15, 15, { strokeWidth: 2, strokeLinecap: "round" }), h("circle", { cx: 11, cy: 11, r: 7 }), h("path", { d: "m21 21-4.3-4.3" })),
+      heart: h("svg", { width: 17, height: 17, viewBox: "0 0 24 24", fill: "currentColor" }, h("path", { d: "M12 21s-7.5-4.7-10-9.3C.4 8.6 2.4 5 6 5c2.3 0 3.8 1.2 4.7 2.5.2.4.6.4.8 0C12.4 6.2 13.9 5 16.2 5c3.6 0 5.6 3.6 4 6.7C17.7 16.3 12 21 12 21z" })),
+      download: h("svg", base(15, 15, { strokeWidth: 2, strokeLinecap: "round", strokeLinejoin: "round" }), h("path", { d: "M12 3v12m0 0 4-4m-4 4-4-4" }), h("path", { d: "M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" })),
+      copy: h("svg", base(14, 14, { strokeWidth: 2, strokeLinecap: "round", strokeLinejoin: "round" }), h("rect", { x: 9, y: 9, width: 13, height: 13, rx: 2 }), h("path", { d: "M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" })),
+      check: h("svg", base(14, 14, { strokeWidth: 2.5, strokeLinecap: "round", strokeLinejoin: "round" }), h("path", { d: "m5 13 4 4L19 7" })),
+      menu: h("svg", base(20, 20, { strokeWidth: 2, strokeLinecap: "round" }), h("path", { d: "M4 6h16M4 12h16M4 18h16" })),
+      close: h("svg", base(20, 20, { strokeWidth: 2, strokeLinecap: "round" }), h("path", { d: "M6 6l12 12M18 6L6 18" })),
+      sun: h("svg", base(17, 17, { strokeWidth: 2, strokeLinecap: "round" }), h("circle", { cx: 12, cy: 12, r: 4 }), h("path", { d: "M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4" })),
+      moon: h("svg", { width: 17, height: 17, viewBox: "0 0 24 24", fill: "currentColor" }, h("path", { d: "M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" })),
+      arrow: h("svg", base(15, 15, { strokeWidth: 2, strokeLinecap: "round", strokeLinejoin: "round" }), h("path", { d: "M5 12h14m0 0-6-6m6 6-6 6" })),
+      spark: h("svg", { width: 15, height: 15, viewBox: "0 0 24 24", fill: "currentColor" }, h("path", { d: "M12 2l1.9 6.1L20 10l-6.1 1.9L12 18l-1.9-6.1L4 10l6.1-1.9z" })),
+    };
+
+    function App() {
+      const [theme, setTheme] = useState("dark");
+      const [menuOpen, setMenuOpen] = useState(false);
+      const [query, setQuery] = useState("");
+      const [preview, setPreview] = useState("The quick brown fox jumps over the lazy dog");
+      const [cat, setCat] = useState("All");
+      const [sort, setSort] = useState("Trending");
+      const [size, setSize] = useState(28);
+      const [favorites, setFavorites] = useState(() => JSON.parse(localStorage.getItem("fav") || "[]"));
+      const [count, setCount] = useState(6);
+      const [toast, setToast] = useState("");
+      const [copied, setCopied] = useState(null);
+      const searchRef = useRef(null);
+      const toastTimer = useRef(null);
+
+      useEffect(() => {
+        const saved = localStorage.getItem("theme");
+        if (saved) setTheme(saved);
+      }, []);
+
+      useEffect(() => { document.documentElement.setAttribute("data-theme", theme); }, [theme]);
+      useEffect(() => { localStorage.setItem("theme", theme); }, [theme]);
+      useEffect(() => { localStorage.setItem("fav", JSON.stringify(favorites)); }, [favorites]);
+
+      const showToast = useCallback((m) => {
+        setToast(m);
+        clearTimeout(toastTimer.current);
+        toastTimer.current = setTimeout(() => setToast(""), 2200);
+      }, []);
+
+      useEffect(() => {
+        const onKey = (e) => {
+          if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
+            e.preventDefault();
+            if (searchRef.current) searchRef.current.focus();
+          }
+        };
+        window.addEventListener("keydown", onKey);
+        return () => window.removeEventListener("keydown", onKey);
+      }, []);
+
+      const shown = useMemo(() => {
+        const q = query.trim().toLowerCase();
+        let list = FONTS.filter((f) =>
+          (cat === "All" || f.cat === cat) &&
+          (!q || (f.name + " " + f.author).toLowerCase().includes(q))
+        );
+        if (sort === "Alphabetical") list = [...list].sort((a, b) => a.name.localeCompare(b.name));
+        else if (sort === "Most Downloaded") list = [...list].sort((a, b) => b.dl - a.dl);
+        else if (sort === "Recently Added") list = [...list].slice().reverse();
+        else list = [...list].sort((a, b) => b.dl - a.dl);
+        return list;
+      }, [query, cat, sort]);
+
+      const shownList = shown.slice(0, count);
+
+      const copyImport = async (f) => {
+        const css = "@import url('https://fonts.googleapis.com/css2?family=" + f.name.replace(/ /g, "+") + "&display=swap');";
+        try { await navigator.clipboard.writeText(css); } catch (_) {}
+        setCopied(f.name);
+        showToast("CSS @import copied");
+        setTimeout(() => setCopied((c) => (c === f.name ? null : c)), 1600);
+      };
+
+      const toggleFav = (name) =>
+        setFavorites((p) => (p.includes(name) ? p.filter((n) => n !== name) : [...p, name]));
+
+      const resetFilters = () => { setQuery(""); setCat("All"); setSort("Trending"); setSize(28); setCount(6); };
+      const pickCat = (c) => { setCat(c); setCount(6); };
+
+      return h("div", null,
+        topbar({ theme, setTheme, menuOpen, setMenuOpen, query, setQuery, searchRef }),
+        h("main", null,
+          hero({ preview, setPreview, n: FONTS.length }),
+          toolbar({ cat, pickCat, sort, setSort, setCount, size, setSize }),
+          h("section", { className: "page-max section-pad", style: { paddingTop: "clamp(2.5rem,5vw,3.5rem)" } },
+            h("div", { className: "grid-head" },
+              h("h2", { id: "library" }, cat !== "All" ? cat : "Featured fonts"),
+              h("p", null, shown.length + " of 1,000 free fonts")
+            ),
+            h("div", { className: "font-grid fadein" },
+              shownList.length
+                ? shownList.map((f) => fontCard({ f, preview, size, favorites, toggleFav, copyImport, copied, showToast }))
+                : h("div", { className: "empty" },
+                    h("p", { style: { fontSize: "1.3rem", margin: "0 0 .4rem" } }, "No fonts match"),
+                    h("p", { style: { margin: 0, fontSize: ".9rem" } },
+                      "Try a different search or category. ",
+                      h("button", { className: "btn btn-secondary btn-sm", onClick: resetFilters }, "Reset filters")
+                    )
+                  )
+            ),
+            count < shown.length &&
+              h("div", { className: "loadmore" },
+                h("button", { className: "btn btn-secondary", onClick: () => setCount((c) => c + 6) }, "Load more fonts")
+              )
+          ),
+          h("section", { className: "page-max section-pad" }, h(Community, null))
+        ),
+        h(Footer, null),
+        h("div", { className: "toast" + (toast ? " show" : "") }, toast)
+      );
+    }
+
+    function brand(tag, cls) {
+      return h(tag || "a", { className: cls || "brand", href: cls ? "#top" : "#top" },
+        h("span", { className: "logo-mrk" }, "Aa"),
+        h("span", { className: "brand-name" }, "1000", h("span", null, "Fonts"))
+      );
+    }
+
+    const NAV = [["Explore", "library"], ["Categories", "categories"], ["Popular", "library"], ["Group Community", "community"], ["Submit Font", "community"]];
+
+    function topbar(p) {
+      return h("header", { className: "topbar" },
+        h("div", { className: "page-max topbar-inner" },
+          brand("a", "brand"),
+          h("nav", { className: "navlinks", "aria-label": "Primary" },
+            NAV.map(([label, id]) => h("a", { key: label, href: "#" + id }, label))
+          ),
+          h("div", { className: "hdr-rght" },
+            h("div", { className: "search" },
+              I.search,
+              h("input", { ref: p.searchRef, type: "text", placeholder: "Search fonts...", value: p.query,
+                onChange: (e) => p.setQuery(e.target.value) }),
+              h("span", { className: "kb-badge" }, "Ctrl K")
+            ),
+            h("button", { className: "toggle", title: "Toggle theme", "aria-label": "Toggle theme",
+              onClick: () => p.setTheme((t) => (t === "dark" ? "light" : "dark")) },
+              h("span", { style: { position: "absolute", inset: 0, display: "grid", placeItems: "center", color: "var(--text-muted)" } },
+                p.theme === "dark" ? I.moon : I.sun)
+            ),
+            h("button", { className: "burger", "aria-label": "Menu", onClick: () => p.setMenuOpen((o) => !o) },
+              p.menuOpen ? I.close : I.menu)
+          )
+        ),
+        h("div", { className: "mobile-nav" + (p.menuOpen ? " open" : "") },
+          NAV.map(([label, id]) =>
+            h("a", { key: label, href: "#" + id, onClick: () => p.setMenuOpen(false) }, label)
+          )
+        )
+      );
+    }
+
+    function hero(p) {
+      return h("section", { className: "hero", id: "top" },
+        h("div", { className: "page-max hero-inner" },
+          h("span", { className: "eyebrow" }, h("span", { className: "dot" }), " 1,000+ fonts · 100% free forever"),
+          h("h1", { className: "h-hero" }, "1,000", h("span", { className: "grad" }, "+"), " Free Web & Desktop Fonts for Creators"),
+          h("p", { className: "h-sub" }, "Curated by typography enthusiasts. 100% free for personal and commercial projects."),
+          h("div", { className: "h-ctas" },
+            h("a", { className: "btn btn-primary", href: "#community" }, "Join Our Community", I.arrow),
+            h("a", { className: "btn btn-secondary", href: "#library" }, "Browse Font Library")
+          ),
+          h("div", { className: "live-preview" },
+            h("div", { className: "live-preview-labl" },
+              "Live preview · type to update every card",
+              h("span", { className: "letters-chip" },
+                ["Aa", "Bb", "Cc"].map((c) => h("span", { className: "on", key: c }, c))
+              )
+            ),
+            h("div", { className: "lp-field" },
+              h("label", { htmlFor: "lp" }, "Aa"),
+              h("input", { id: "lp", className: "lp-input", value: p.preview, onChange: (e) => p.setPreview(e.target.value),
+                placeholder: "The quick brown fox...", autoComplete: "off" }),
+              h("span", { className: "size-val", style: { color: "var(--text-muted)" } }, p.n + " fonts")
+            )
+          )
+        )
+      );
+    }
+
+    function toolbar(p) {
+      return h("section", { className: "toolbar" },
+        h("div", { className: "page-max toolbar-inner" },
+          h("div", { className: "tags" },
+            CATEGORIES.map((c) =>
+              h("button", { key: c, className: "tag" + (p.cat === c ? " active" : ""), onClick: () => p.pickCat(c) }, c)
+            )
+          ),
+          h("div", { className: "tool-controls" },
+            h("select", { className: "sort-select", value: p.sort, onChange: (e) => { p.setSort(e.target.value); p.setCount(6); } },
+              SORTS.map((s) => h("option", { key: s }, s))
+            ),
+            h("label", { className: "sizectrl" },
+              "Aa",
+              h("input", { type: "range", min: 14, max: 72, value: p.size, onChange: (e) => p.setSize(+e.target.value) }),
+              h("span", { className: "size-val" }, p.size + "px")
+            )
+          )
+        )
+      );
+    }
+
+    function fontCard(p) {
+      const f = p.f;
+      const fav = p.favorites.includes(f.name);
+      return h("article", { className: "font-card", key: f.name },
+        h("div", { className: "fc-top" },
+          h("button", { className: "favorite" + (fav ? " on" : ""), title: "Favorite", onClick: () => p.toggleFav(f.name) }, I.heart),
+          h("span", { className: "font-varcount" }, f.variants + " Styles")
+        ),
+        h("div", { className: "fc-preview" },
+          h("span", { style: { fontFamily: f.family, fontSize: p.size + "px", fontWeight: 700 } }, p.preview || "Preview")
+        ),
+        h("div", { className: "fc-info" },
+          h("h3", { className: "fc-name", style: { fontFamily: f.family } }, f.name),
+          h("div", { className: "fc-meta" },
+            h("span", null, f.author),
+            h("span", { className: "license" }, f.lic)
+          ),
+          h("div", { className: "fc-actions" },
+            h("button", { className: "btn btn-ghost", onClick: () => p.showToast(f.name + ".zip") }, I.download, " Download ZIP"),
+            h("button", { className: "btn btn-ghost", onClick: () => p.copyImport(f) },
+              p.copied === f.name ? I.check : I.copy,
+              p.copied === f.name ? " Copied" : " Copy @import")
+          )
+        )
+      );
+    }
+
+    const SUBMISSIONS = [
+      { u: "Ana Correia", n: "AC", f: "Space Grotesk", note: "Nightly variable test - 71pt. Clean." },
+      { u: "Yusuf Tariq", n: "YT", f: "Poppins", note: "Pairing well with Inter. Feedback welcome." },
+      { u: "Mina Park", n: "MP", f: "JetBrains Mono", note: "Code ligatures dream. OFL license checked." },
+      { u: "Leo Fischer", n: "LF", f: "Fraunces", note: "Editorial spread, soft contrast looks mint." },
+      { u: "Sofia Duarte", n: "SD", f: "Bebas Neue", note: "Poster draft, fits the grid perfectly." },
+    ];
+
+    function Community() {
+      const stats = [["15k+", "Designers & Devs"], ["1,000+", "Free Fonts"], ["120", "Contributors"], ["98%", "OFL / Open"]];
+      const soc = [["Discord", "#5865F2"], ["Telegram", "#229ED9"]];
+      return h("div", { className: "comm", id: "community" },
+        h("div", { className: "comm-inner" },
+          h("span", { className: "eyebrow" }, h("span", { className: "dot" }), " Community"),
+          h("h2", { style: { marginTop: ".8rem" } }, "Join the 1000Fonts Creator Group"),
+          h("p", null, "Swap gems, get pairing advice, and drop your foundry in a friendly corner of the web."),
+          h("div", { className: "stat" },
+            stats.map(([b, s]) => h("div", { key: s }, h("b", null, b), h("span", null, s)))
+          ),
+          h("div", { className: "comm-ctas" },
+            soc.map(([l, c]) => h("a", { key: l, className: "chip-btn", href: "#community", style: { color: c } }, I.spark, " ", l)),
+            h("a", { className: "chip-btn", href: "#community", style: { color: "var(--text)" } }, I.spark, " GitHub")
+          )
+        ),
+        h("div", { className: "join-section" },
+          h("div", { className: "submissions" },
+            h("h3", null, "Recent community submissions"),
+            h("div", { className: "sub-list" },
+              SUBMISSIONS.map((s) =>
+                h("div", { className: "sub", key: s.u },
+                  h("span", { className: "sub-ava" }, s.n),
+                  h("div", { className: "sub-body" }, h("b", null, s.u), h("p", null, s.note)),
+                  h("span", { className: "sub-font" }, s.f)
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+
+    function Footer() {
+      const cats = ["Serif", "Sans-Serif", "Display", "Monospace", "Handwriting", "Variable"];
+      const lic = ["OFL License", "Commercial Use", "Self-host Guide", "Attribution"];
+      const col = (title, items) =>
+        h("div", { className: "f-ot" },
+          h("h4", null, title),
+          items.map(([t, id]) => h("a", { key: t, href: "#" + id }, t))
+        );
+      return h("footer", { className: "footer" },
+        h("div", { className: "page-max fot-grid" },
+          h("div", null,
+            brand("a", "brand"),
+            h("p", { className: "f-brand-note" }, "1,000+ free fonts for creators, curated by typography enthusiasts. 100% free for personal and commercial projects."),
+            h("div", { className: "f-social" },
+              ["Discord", "Telegram", "GitHub"].map((s) => h("a", { key: s, href: "#community", title: s }, I.spark))
+            )
+          ),
+          col("Categories", cats.map((c) => [c, "library"])),
+          col("Licensing", lic.map((l) => [l, "top"])),
+          h("div", { className: "f-ot" },
+            h("h4", null, "Newsletter"),
+            h("p", { style: { color: "var(--text-muted)", fontSize: ".88rem", margin: "0 0 .6rem" } }, "Monthly font drops, zero spam."),
+            h("form", { className: "newsletter", onSubmit: (e) => e.preventDefault() },
+              h("input", { type: "email", placeholder: "you@studio.com", "aria-label": "Email", required: true }),
+              h("button", { className: "btn btn-primary btn-sm", type: "submit" }, "Subscribe")
+            )
+          )
+        ),
+        h("div", { className: "page-max floor" },
+          h("span", null, "\u00A9 " + new Date().getFullYear() + " 1000Fonts \u2014 free forever."),
+          h("span", null, "Fonts are property of their respective foundries \u00B7 OFL / Open source.")
+        )
+      );
+    }
+
+    createRoot(document.getElementById("root")).render(h(App, null));
+  </script>
+</body>
+</html>
